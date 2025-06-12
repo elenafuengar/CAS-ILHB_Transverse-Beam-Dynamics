@@ -23,6 +23,7 @@ It is highly recommended to create a dedicated `python environment` to start wit
 # create dev python environment
 conda create --name xsuite python=3.11
 conda activate xsuite
+conda install -c conda-forge compilers # to run on CPU
 ```
 
 ### Xsuite
