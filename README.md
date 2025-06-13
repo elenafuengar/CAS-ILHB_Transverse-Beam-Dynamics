@@ -11,7 +11,10 @@ To run this python notebook examples, we will need to install:
 
 ### Python 3.11
 
-This can be easily done through `conda-forge`:
+This can be easily done through `conda-forge` downloading the executable (Windows/MACos):
+🔗 https://conda-forge.org/download/ 
+
+ or from the terminal (Ubuntu/MACos):
 ```bash
 # get, install and activate miniforge
 wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
