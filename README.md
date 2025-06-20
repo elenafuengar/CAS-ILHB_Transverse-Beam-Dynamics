@@ -40,7 +40,14 @@ pip install xsuite xwakes
 
 If you're running the [notebooks on SWAN](https://swan.web.cern.ch/), we recommend choosing a configuration with 4cores/16Gb and make sure to activate the ☑️`Use Python packages installed on CERNBox` checkbox.
 
-Then, add at the top of the notebook the following lines in a dedicated cell to perform the installation of Xsuite on your user's CERNBox:
+Then, you can import the repository clicking on the ☁️ symbol and pasting the GIT repository url: 
+
+```
+https://github.com/elenafuengar/CAS-ILHB_Transverse-Beam-Dynamics.git
+```
+Make sure to download it in the **root directory** and not inside an existing folder to avoid issues!
+
+Then, add at the top of the `001` notebook the following lines in a dedicated cell to perform the installation of Xsuite on your user's CERNBox:
 ```
 ! pip install --user xsuite xwakes
 ! export PATH=$PATH:/eos/user/${USER::1}/$USER/.local/bin
