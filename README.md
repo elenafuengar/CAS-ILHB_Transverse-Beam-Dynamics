@@ -3,8 +3,29 @@
 
 ## Content of the Hands-on
 
-[TODO]
+In the hands-on we will study the impedance of the LHC unshielded bellows and their impact on the transverse beam dynamics if they were to be added to the LHC without shielding. The hands-on utilizes CST Studio for the Wakefield simulations, in parallel with the following python notebooks:
 
+#### 001_xwakes_tmci_hllhc.ipynb
+
+This notebook investigates the Transverse Mode Coupling Instability (TMCI) threshold for a single LHC bunch at injection energy using the LHC impedance model. Key steps include:
+
+- Setting up LHC machine and bunch parameters.
+- Importing and visualizing the LHC wake function.
+- Performing intensity scans and tracking with Xsuite.
+- Analyzing turn-by-turn transverse positions and tune spectra.
+- Visualizing tune shifts and mode coupling as a function of intensity.
+- Exploring intrabunch motion and its relation to headtail modes.
+
+#### 002_xwakes_tmci_hllhc_with_bellows.ipynb
+
+This notebook extends the previous study by including the effect of 1700 unshielded LHC bellows, modeled as a broadband resonator, in the impedance model. It covers:
+
+- Adding a resonator wake to the wake used for tracking.
+- Comparing beam dynamics with and without the bellows contribution.
+- Repeating intensity scans and tracking.
+- Assessing the impact on TMCI threshold and instability mitigation.
+- Visualizing changes in intrabunch motion and discussing mitigation strategies (e.g., lowering the bellows impedance in CST, increasing chromaticity, using a transverse damper).
+  
 ## Installation guide
 
 To run this python notebook examples, we will need to install:
@@ -29,7 +50,7 @@ conda activate xsuite
 conda install -c conda-forge compilers # to run on CPU
 ```
 
-If you are using Windows, we recommend installing [WSL Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) and then proceed with the Miniforge install. Alternatively, the notebooks can be opened on CERN's [SWAN](https://swan.web.cern.ch/swan/) or Google collab (not-tested).
+If you are using Windows, we recommend installing [WSL Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) and then proceed with the Miniforge install. Alternatively, the notebooks can be opened on CERN's [SWAN](https://swan.web.cern.ch/swan/) or Google collab notebooks. 
 
 ### Xsuite
   
